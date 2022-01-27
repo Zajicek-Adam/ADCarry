@@ -15,13 +15,13 @@ h1{
 b{
     font-weight: 700;
 }
-body, .container {
+body, .container, .item{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.container > div, .item{
+.container > div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,13 +32,18 @@ body, .container {
     background-color: rgba(255,255,255,10%);
     width: 255px;
     height: 255px;
-    font-size: 1.25em;
+    font-size: 1.5em;
+    font-weight: 500;
     box-shadow: 0 0 50px -20px black;
     transition: transform 400ms ease;
     cursor: pointer;
 }
 .item:hover{
     transform: scale(1.05);
+}
+.item img{
+    margin-top: 24px;
+    width: 50px;
 }
 body {
     background: linear-gradient(90deg, #2D2C6B, #5C3999);
