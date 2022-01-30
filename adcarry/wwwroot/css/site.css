@@ -1,34 +1,51 @@
+:root {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
 html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
 }
-:root{
-    font-family: 'Raleway', sans-serif;
-    color: white;
+
+body {
+    background: linear-gradient(90deg, #2D2C6B, #5C3999);
 }
-h1{
+
+h1 {
     font-weight: 300;
     font-size: 4em;
 }
-b{
+
+h2 {
+    font-weight: 300;
+}
+
+b {
     font-weight: 700;
 }
-body, .container, .item{
+
+body, .container, .item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.container > div{
+
+.container > div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .item {
+    text-decoration: none;
+    color: white;
     border-radius: 25px;
-    margin: 2.5em;
+    margin: 1em;
     background-color: rgba(255,255,255,10%);
     width: 255px;
     height: 255px;
@@ -38,13 +55,16 @@ body, .container, .item{
     transition: transform 400ms ease;
     cursor: pointer;
 }
-.item:hover{
+
+.item:hover {
     transform: scale(1.05);
 }
-.item img{
+
+.item img {
     margin-top: 24px;
     width: 50px;
 }
-body {
-    background: linear-gradient(90deg, #2D2C6B, #5C3999);
+
+.circle {
+    border-radius: 50%;
 }
